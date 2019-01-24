@@ -3,7 +3,6 @@ package com.preferential.panning.user.dto;
 import java.util.Date;
 
 
-import org.springframework.web.multipart.MultipartFile;
 
 import com.preferential.panning.user.entity.User;
 
@@ -17,9 +16,7 @@ public class UserDto extends User {
 
 	private String orderByClause;
 	
-	private MultipartFile headPicFile;
 	
-	private MultipartFile[] certificateImageFile;
 	
 	
 	private String oldPassword;
@@ -136,23 +133,6 @@ public class UserDto extends User {
 	public void setOldPassword(String oldPassword) {
 		this.oldPassword = oldPassword;
 	}
-
-	public MultipartFile[] getCertificateImageFile() {
-		return certificateImageFile;
-	}
-
-	public void setCertificateImageFile(MultipartFile[] certificateImageFile) {
-		this.certificateImageFile = certificateImageFile;
-	}
-
-	public MultipartFile getHeadPicFile() {
-		return headPicFile;
-	}
-
-	public void setHeadPicFile(MultipartFile headPicFile) {
-		this.headPicFile = headPicFile;
-	}
-
 
 	public void setOrderByClause(String orderByClause) {
         this.orderByClause = orderByClause;
